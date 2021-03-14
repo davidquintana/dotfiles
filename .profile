@@ -1,3 +1,5 @@
+# echo "IN .profile"
+
 # load .bashrc settings
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
@@ -12,7 +14,7 @@ export GOPATH=$HOME/Developer/SDK/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Android
-export ANDROID_HOME=/Users/jdq/Library/Android/sdk
+# export ANDROID_HOME=/Users/jdq/Library/Android/sdk
 
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
@@ -20,8 +22,4 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/H
 # Silence Catalina zsh message
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/jdq/Developer/SDK/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/jdq/Developer/SDK/google-cloud-sdk/completion.bash.inc'
+# echo "OUT .profile"

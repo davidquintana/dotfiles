@@ -5,9 +5,11 @@
 ## dot files
 echo "Copying dot files..."
 cp ~/.bashrc .
-cp ~/.bash_profile .
+cp ~/.profile .
 cp ~/.tmux.conf .
 cp ~/.vimrc .
+cp ~/.aliases .
+cp -r ~/.vim .
 
 ## homebrew
 echo "Saving homebrew packages..."

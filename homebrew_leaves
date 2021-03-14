@@ -8,6 +8,7 @@ ffmpeg
 geckodriver
 glances
 go
+htop
 ldid
 libfreenect
 libusbmuxd
@@ -16,12 +17,12 @@ mitmproxy
 mysql@5.7
 nmap
 node
-openjdk
 poppler
 postgresql
 python@3.8
 redis
 syncthing
 tmux
+tree
 wget
 youtube-dl
