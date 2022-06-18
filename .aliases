@@ -3,3 +3,5 @@
 weather () {
     curl https://wttr.in/"${1}"
 }
+
+alias python=python3

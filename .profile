@@ -14,7 +14,7 @@ export GOPATH=$HOME/Developer/SDK/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Android
-# export ANDROID_HOME=/Users/jdq/Library/Android/sdk
+#export ANDROID_HOME=/Users/jdq/Library/Android/sdk
 
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home

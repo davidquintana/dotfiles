@@ -7,10 +7,10 @@ Anki.app
 AppZapper.app
 Arduino.app
 Aurora HDR 2019.app
+Backblaze Downloader.app
 Backblaze.app
 BackupLoupe.app
 BetterSnapTool.app
-Blackmagic Disk Speed Test.app
 Brave Browser.app
 BrowseShot.app
 Carbon Copy Cloner.app
@@ -20,9 +20,7 @@ Clipy.app
 DB Browser for SQLite.app
 DaisyDisk.app
 Day One Classic.app
-DeltaWalker.app
 Discord.app
-Disk Drill.app
 Docker.app
 Electrum.app
 Firefox.app
@@ -30,17 +28,19 @@ HandBrake.app
 Hex Fiend.app
 Hopper Disassembler v4.app
 Impactor.app
+Inkscape.app
 Keynote.app
-Little Snitch Configuration.app
 Luminar 4.app
+MacDown.app
+Maestral.app
 Magnet.app
 Marked.app
 Microsoft Excel.app
-Microsoft PowerPoint.app
 Microsoft Word.app
-MultiDoge.app
+Mozilla VPN.app
 NetNewsWire.app
 Numbers.app
+OBS.app
 Obsidian.app
 OneDrive.app
 OpenEmu.app
@@ -48,6 +48,7 @@ Pages.app
 PhoneView.app
 Pixelmator.app
 Postico.app
+Raspberry Pi Imager.app
 Rectangle.app
 Rested.app
 Safari.app
@@ -59,17 +60,23 @@ Slack.app
 Sourcetree.app
 Speedtest.app
 StatsBar.app
+Sublime Text 4.app
 Sublime Text.app
-Telegram.app
+Syncthing.app
 Thunderbird.app
 TransType 4.app
 Transmission.app
 Transmit.app
+TweetDeck.app
 Utilities
 VLC.app
 VMware Fusion.app
 Visual Studio Code.app
+Webull Desktop.app
 Xcode.app
+balenaEtcher.app
 checkra1n.app
 iTerm.app
+thinkorswim
+thinkorswim_2
 zoom.us.app

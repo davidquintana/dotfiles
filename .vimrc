@@ -1,3 +1,9 @@
+" don't bother with vi compatibility
+set nocompatible
+
+" enable syntax highlighting
+syntax enable
+
 " Syntax highlighting on
 syntax on
 

@@ -22,7 +22,8 @@ DARK_MAGENTA="\[\e[1;35m\]"
 # Prompt
 #export PS1="${GREEN}(${DARK_GRAY}\u${GREEN})-(${DARK_GRAY}\h${GREEN})-(${DARK_GRAY}\w${GREEN})\n(${DARK_GRAY}\@ \d${GREEN}) \m \$ ${COLOR_NONE}"
 #export PS1="${DARK_BLUE}\u${DARK_CYAN}@${DARK_BLUE}\h${DARK_CYAN}:${CYAN}\w${DARK_GRAY}\$${COLOR_NONE} "
-export PS1="${DARK_GRAY}\u@\h${COLOR_NONE}:${CYAN}\w${COLOR_NONE} \$ "
+#export PS1="${DARK_GRAY}\u@\h${COLOR_NONE}:${CYAN}\w${COLOR_NONE} \$ "
+export PS1="${DARK_GREEN}[${GREEN}\$(date +%H:%M:%S)${DARK_GREEN}] ${DARK_GRAY}\u@\h${COLOR_NONE}:${CYAN}\w${COLOR_NONE} \$ "
 
 # Color in console
 # don't do this for dumb terminals
