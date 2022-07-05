@@ -5,3 +5,5 @@ weather () {
 }
 
 alias python=python3
+
+alias ll='ls -alF'
