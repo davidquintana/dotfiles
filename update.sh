@@ -14,7 +14,8 @@ cp -r ~/.vim .
 ## homebrew
 echo "Saving homebrew packages..."
 brew leaves > homebrew_leaves
-brew list --cask > homebrew_casks
+brew list --formulae -1 > homebrew_formulae
+brew list --casks -1 > homebrew_casks
 
 ## applications
 echo "Saving Applications..."
