@@ -1,8 +1,13 @@
 # echo "IN .profile"
 
-# load .bashrc settings
+# load .bashrc 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
+fi
+
+# load .env 
+if [ -f ~/.env ]; then
+   source ~/.env
 fi
 
 # Homebrew paths
@@ -21,9 +26,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/H
 
 # Silence Catalina zsh message
 export BASH_SILENCE_DEPRECATION_WARNING=1
-
-# Gemini CLI
-export GEMINI_API_KEY=""
 
 # Color codes, use like "${BLUE}"
   COLOR_NONE="\[\e[0m\]"

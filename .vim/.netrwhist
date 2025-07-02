@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/jdq/Developer/Projects/qwizy.com/qwizy_generators'
+let g:netrw_dirhist_8='/Users/jdq/Sync/Notes/Security'
+let g:netrw_dirhist_7='/Users/jdq/Sync/Notes'
+let g:netrw_dirhist_6='/Users/jdq/Sync/Notes/Security'
+let g:netrw_dirhist_5='/Users/jdq/Sync/Notes'
+let g:netrw_dirhist_4='/Users/jdq/Developer/Projects/edia_scraper/data/algebra_1/linear_functions/write_linear_equation_from_table_point_slope_form'
+let g:netrw_dirhist_3='/Users/jdq/Sync/Notes'
+let g:netrw_dirhist_2='/Users/jdq/Sync/Notes/House'
+let g:netrw_dirhist_1='/Users/jdq/Scratch/html2svg/electron/src/third_party/angle'
