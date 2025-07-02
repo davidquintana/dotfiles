@@ -9,6 +9,7 @@ cython
 doctl
 docutils
 dpkg
+fastfetch
 fd
 ffmpeg
 geckodriver
@@ -52,6 +53,7 @@ stripe/stripe-cli/stripe
 stylua
 tmux
 tree
+uv
 wget
 wireshark
 wxwidgets

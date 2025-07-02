@@ -11,3 +11,5 @@ alias pip=pip3
 alias ll='ls -al'
 
 alias ips="if [[ \$(uname) == 'Darwin' ]]; then ifconfig -a | awk '/^[a-zA-Z0-9]/ {iface=\$1; sub(/:\$/, \"\", iface)} /inet / {if (\$2 !~ /127.0.0.1/) print iface \": \" \$2}'; else ip -4 a | awk '/^[0-9]+:/ {iface=\$2; sub(/:\$/, \"\", iface)} /inet / {if (\$2 !~ /127.0.0.1/) print iface \": \" \$2}' | sed 's/\/.*//'; fi"
+
+alias claude="/Users/jdq/.claude/local/claude"

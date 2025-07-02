@@ -1,5 +1,6 @@
 applite
 beekeeper-studio
+ghostty
 github
 google-cloud-sdk
 mitmproxy
@@ -15,3 +16,4 @@ rectangle
 stats
 temurin
 wireshark
+wireshark-app

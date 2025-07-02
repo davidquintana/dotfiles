@@ -10,6 +10,7 @@ cp ~/.tmux.conf .
 cp ~/.vimrc .
 cp ~/.aliases .
 cp -r ~/.vim .
+cp ~/Library/Application\ Support/com.mitchellh.ghostty/config ghostty/.
 
 ## homebrew
 echo "Saving homebrew packages..."

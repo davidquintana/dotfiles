@@ -1,7 +1,7 @@
 abseil
 aom
 aribb24
-assimp
+assimp@5
 ast-grep
 autoconf
 automake
@@ -28,6 +28,7 @@ docutils
 double-conversion
 dpkg
 expat
+fastfetch
 fd
 ffmpeg
 flac
@@ -211,6 +212,7 @@ tree-sitter
 unbound
 unibilium
 utf8proc
+uv
 webp
 wget
 wireshark
