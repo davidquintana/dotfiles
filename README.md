@@ -1,7 +1,6 @@
-# Mac setup files
+# Dotfiles Notes
 
-```shell
-$ restore.sh
+Mac Homebrew Brewfile generated with:
 ```
-
-
+brew bundle dump --global --force --describe
+```
