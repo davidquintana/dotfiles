@@ -1,13 +1,16 @@
 # echo "IN .profile"
 
-# load .bashrc 
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
 fi
 
 # load .env 
 if [ -f ~/.env ]; then
-   source ~/.env
+   . ~/.env
 fi
 
 # Homebrew paths
