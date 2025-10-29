@@ -41,5 +41,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# Load prompt
+if [ -f ~/.prompt ]; then
+    . ~/.prompt
+fi
+
 # echo "OUT .bashrc"
 
