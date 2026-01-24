@@ -1,5 +1,7 @@
 tap "elastic/tap"
+tap "sst/tap"
 tap "stripe/stripe-cli"
+tap "tw93/tap"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # TIFF library and utilities
@@ -18,28 +20,40 @@ brew "ast-grep"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# Cryptographic recipes and primitives for Python
-brew "cryptography"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@78"
 # Linux/OSX/FreeBSD resource monitor
 brew "bpytop"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Cross-platform make
 brew "cmake"
 # GNU multiple precision arithmetic library
 brew "gmp"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Compiler for writing C extensions for the Python language
 brew "cython"
+# File comparison utilities
+brew "diffutils"
 # Command-line tool for DigitalOcean
 brew "doctl"
 # Text processing system for reStructuredText
@@ -58,8 +72,6 @@ brew "p11-kit"
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Library for JPEG-2000 image manipulation
 brew "openjpeg"
 # Image processing and image analysis library
@@ -70,8 +82,8 @@ brew "libarchive"
 brew "libass"
 # Reliable Internet Stream Transport (RIST)
 brew "librist"
-# Framework for layout and rendering of i18n text
-brew "pango"
+# Cross-platform library for audio I/O
+brew "portaudio"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Play, record, convert, and stream audio and video
@@ -90,7 +102,7 @@ brew "glances"
 brew "libgpg-error"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
@@ -132,6 +144,8 @@ brew "libffi"
 brew "libfreenect"
 # OpenResty's Branch of LuaJIT 2
 brew "luajit-openresty"
+# Package manager for the Lua programming language
+brew "luarocks"
 # LZMA-based compression program similar to gzip or bzip2
 brew "lzip"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -140,7 +154,7 @@ brew "neovim"
 brew "nghttp2"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Libraries for security-enabled client and server applications
 brew "nss"
@@ -152,18 +166,12 @@ brew "pngcrush"
 brew "po4a"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-# Cross-platform library for audio I/O
-brew "portaudio"
-# Object-relational database system
-brew "postgresql@14"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
+brew "python@3.12"
 # Cross-platform application and UI framework
 brew "qt"
 # Search tool like grep and The Silver Searcher
@@ -180,24 +188,26 @@ brew "tree"
 brew "uv"
 # Internet file retriever
 brew "wget"
-# Network analyzer and capture tool - without graphical user interface
-brew "wireshark"
 # Cross-platform C++ GUI toolkit
 brew "wxwidgets"
 # JavaScript package manager
 brew "yarn"
+# The AI coding agent built for the terminal.
+brew "sst/tap/opencode"
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
 # User-friendly GUI app for Homebrew
 cask "applite"
 # Cross platform SQL editor and database management app
 cask "beekeeper-studio"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
-cask "ghostty"
+cask "ghostty@tip"
 # Desktop client for GitHub repositories
 cask "github"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
+# Open-source cross-platform alternative to AirDrop
+cask "localsend"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
 # Replacement for Docker Desktop
@@ -208,22 +218,16 @@ cask "pearcleaner"
 cask "provisionql"
 # Quick Look plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
-# Quick Look generator for Markdown files
-cask "qlmarkdown"
 # Quick Look plugin for plaintext files without an extension
 cask "qlstephen"
 # Quick Look plugin for JSON files
 cask "quicklook-json"
-# Archive manager for data compression and backups
-cask "rar"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
 # System monitor for the menu bar
 cask "stats"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin"
-# Network protocol analyzer
-cask "wireshark-app"
+# Video communication and virtual meeting platform
+cask "zoom"
 vscode "4ops.terraform"
 vscode "asvetliakov.vscode-neovim"
 vscode "docker.docker"
