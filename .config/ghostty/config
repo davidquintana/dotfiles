@@ -16,32 +16,53 @@
 # on Ghostty's website, at https://ghostty.org/docs/config.
 
 
-# Font
-font-size = 16
-font-family = JetBrainsMono Nerd Font Mono
-font-thicken = true
+# Typography
+font-size = 13
+font-family = JetBrainsMonoNL Nerd Font Mono, Symbols Nerd Font Mono
+#font-thicken = true
+font-feature = -liga, -calt
+#adjust-cell-height = 2
 
-# Colors
+# Theme/Colors
 # theme = Dracula
-theme = OneHalfDark
+theme = One Half Dark
 # theme = Ayu Mirage
 # theme = Builtin Pastel Dark
-# background = #000000
-background-opacity = 0.90
-background-blur-radius = 30
-unfocused-split-opacity = 0.60
 
-# Window
+# Window/Appearance
+# background = #000000
+background-opacity = 0.97
+background-blur-radius = 15
+unfocused-split-opacity = 0.60
 window-padding-x = 10
 window-padding-y = 10
 window-decoration = true
-# window-theme = auto
+window-save-state = always
+window-theme = auto
 
-# General
+# Mouse
+mouse-hide-while-typing = true
+selection-invert-fg-bg = true
+
+# Security
+clipboard-paste-protection = false
+
+# Cursor
 cursor-style = block
 cursor-style-blink = true
-selection-invert-fg-bg = true
-shell-integration-features = no-cursor
+cursor-opacity = 0.8
+
+# Shell Integration
+shell-integration-features = no-cursor, ssh-env, title
 # shell-integration-features = cursor, sudo, title
-term = xterm-256color
+
+# General 
 quit-after-last-window-closed = true
+bell-features = attention,title,system
+#term = xterm-256color
+
+# keybindings
+# keybind for multi-lines in claude code
+keybind = shift+enter=text:\n
+
+
