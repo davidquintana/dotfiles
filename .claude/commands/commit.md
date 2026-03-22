@@ -1,0 +1,1 @@
+Git commit the previous work. Before you do, if there are any updates that need to be made to CLAUDE.md or any documentations based on what is about to be committed, do so and include it in the commit. If it makes logical sense to split into multiple commits, do so. Never credit Claude in the commit message.
