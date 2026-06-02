@@ -8,7 +8,7 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# load .env 
+# load .env
 if [ -f ~/.env ]; then
    . ~/.env
 fi
@@ -29,17 +29,10 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/opt/homebrew/bin/:$PATH
 export PATH=/opt/homebrew/sbin/:$PATH
 
-# Golang paths
-export GOPATH=$HOME/Developer/SDK/go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+# Local global npm
+export PATH="$HOME/.npm-global/bin:$PATH"
 
-# Android
-export ANDROID_HOME=/Users/jdq/Library/Android/sdk
-
-# Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-
-# Silence Catalina zsh message
+# Silence zsh message
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # echo "OUT .profile"
