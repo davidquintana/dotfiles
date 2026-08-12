@@ -23,7 +23,7 @@ fi
 
 skip() {
     case "$1" in
-        README.md|mac_apps|install.sh|.vim/.netrwhist) return 0 ;;
+        README.md|.gitignore|install.sh|.vim/.netrwhist) return 0 ;;
         *) return 1 ;;
     esac
 }
