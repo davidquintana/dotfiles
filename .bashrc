@@ -1,25 +1,34 @@
 # echo "IN .bashrc"
 
-# Color in console
+# PATH and env for non-login shells (Ubuntu GUI terminals)
+if [ -f "$HOME/.path" ]; then
+    . "$HOME/.path"
+fi
+export EDITOR=vim
 export COLORTERM=truecolor
+export LC_COLLATE=C
 
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# Color in console
 # don't do this for dumb terminals
 if [ "$TERM" != "dumb" ]; then
  if [ $(uname) == "Linux"  ]; then
    # Linux
    alias ls='ls --color=auto'
-   LS_COLORS='di=33:fi=0:ln=95:pi=5:so=5:bd=5:cd=5:or=37:mi=0:ex=31:*.rpm=90'
+   export LS_COLORS='di=33:fi=0:ln=95:pi=5:so=5:bd=5:cd=5:or=37:mi=0:ex=31:*.rpm=90'
  else
-   # OS X   
+   # OS X
    alias ls='ls -G'
    export LSCOLORS=ExFxCxDxBxegedabagacad
  fi
- #This is for everyone       
+ #This is for everyone
  export CLICOLOR=1
 fi
-
-# Set the proper text editor
-export EDITOR=vim
 
 # History settings
 export HISTFILESIZE=50000
@@ -33,7 +42,13 @@ shopt -s histappend
 shopt -s checkwinsize
 
 # Enable bash completion
-[ -f /etc/bash_completion ] && source /etc/bash_completion
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+elif [ -f /opt/homebrew/etc/profile.d/bash_completion.sh ]; then
+    . /opt/homebrew/etc/profile.d/bash_completion.sh
+elif [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
+    . /usr/local/etc/profile.d/bash_completion.sh
+fi
 
 # Improve output of less for binary files
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -48,19 +63,11 @@ if [ -f ~/.prompt ]; then
     . ~/.prompt
 fi
 
-# opencode
-export PATH=/home/jdq/.opencode/bin:$PATH
-
-# local global npm
-export PATH="$HOME/.npm-global/bin:$PATH"
-
 # Google Cloud CLI completions
-source /snap/google-cloud-cli/current/completion.bash.inc
+[ -f /snap/google-cloud-cli/current/completion.bash.inc ] && . /snap/google-cloud-cli/current/completion.bash.inc
 
 # >>> grok installer >>>
-export PATH="$HOME/.grok/bin:$PATH"
 [[ -r "$HOME/.grok/completions/bash/grok.bash" ]] && source "$HOME/.grok/completions/bash/grok.bash"
 # <<< grok installer <<<
 
 # echo "OUT .bashrc"
-

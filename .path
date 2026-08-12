@@ -1,0 +1,40 @@
+# Shared PATH. Sourced from .profile and .bashrc. POSIX.
+
+_path_prepend() {
+    case ":$PATH:" in
+        *":$1:"*) ;;
+        *) PATH="$1:$PATH" ;;
+    esac
+}
+
+# Homebrew first so later prepends win
+if [ -z "${HOMEBREW_PREFIX-}" ]; then
+    if [ -x /opt/homebrew/bin/brew ]; then
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    elif [ -x /usr/local/bin/brew ]; then
+        eval "$(/usr/local/bin/brew shellenv)"
+    fi
+fi
+
+if [ -d "$HOME/.npm-global/bin" ]; then
+    _path_prepend "$HOME/.npm-global/bin"
+fi
+
+if [ -d "$HOME/.opencode/bin" ]; then
+    _path_prepend "$HOME/.opencode/bin"
+fi
+
+if [ -d "$HOME/.grok/bin" ]; then
+    _path_prepend "$HOME/.grok/bin"
+fi
+
+if [ -d "$HOME/.local/bin" ]; then
+    _path_prepend "$HOME/.local/bin"
+fi
+
+if [ -d "$HOME/bin" ]; then
+    _path_prepend "$HOME/bin"
+fi
+
+unset -f _path_prepend
+export PATH
