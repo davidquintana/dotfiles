@@ -1,6 +1,8 @@
 # echo "IN .bashrc"
 
 # Color in console
+export COLORTERM=truecolor
+
 # don't do this for dumb terminals
 if [ "$TERM" != "dumb" ]; then
  if [ $(uname) == "Linux"  ]; then
@@ -45,6 +47,20 @@ fi
 if [ -f ~/.prompt ]; then
     . ~/.prompt
 fi
+
+# opencode
+export PATH=/home/jdq/.opencode/bin:$PATH
+
+# local global npm
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+# Google Cloud CLI completions
+source /snap/google-cloud-cli/current/completion.bash.inc
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+[[ -r "$HOME/.grok/completions/bash/grok.bash" ]] && source "$HOME/.grok/completions/bash/grok.bash"
+# <<< grok installer <<<
 
 # echo "OUT .bashrc"
 
